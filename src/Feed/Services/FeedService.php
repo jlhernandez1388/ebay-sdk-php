@@ -12,7 +12,7 @@ namespace DTS\eBaySDK\Feed\Services;
 
 class FeedService extends \DTS\eBaySDK\Feed\Services\FeedBaseService
 {
-    const API_VERSION = 'v1_beta';
+    const API_VERSION = 'v1';
 
     /**
      * @property array $operations Associative array of operations provided by the service.
