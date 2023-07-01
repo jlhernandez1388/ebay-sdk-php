@@ -49,6 +49,12 @@ class AspectConstraint extends \DTS\eBaySDK\Types\BaseType
             'attribute' => false,
             'elementName' => 'aspectMode'
         ],
+        'aspectUsage' => [
+            'type' => 'string',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'aspectUsage'
+        ],
         'aspectRequired' => [
             'type' => 'boolean',
             'repeatable' => false,
