@@ -271,6 +271,13 @@ class InventoryService extends \DTS\eBaySDK\Inventory\Services\InventoryBaseServ
                 ]
             ]
         ],
+        'WithdrawOfferByInventoryItemGroup' => [
+            'method' => 'POST',
+            'resource' => 'offer/withdraw_by_inventory_item_group',
+            'responseClass' => '\DTS\eBaySDK\Inventory\Types\WithdrawOfferByInventoryItemGroupRestResponse',
+            'params' => [
+            ]
+        ],
         'UpdateOffer' => [
             'method' => 'PUT',
             'resource' => 'offer/{offerId}',
@@ -744,6 +751,24 @@ class InventoryService extends \DTS\eBaySDK\Inventory\Services\InventoryBaseServ
     public function withdrawOfferAsync(\DTS\eBaySDK\Inventory\Types\WithdrawOfferRestRequest $request)
     {
         return $this->callOperationAsync('WithdrawOffer', $request);
+    }
+
+    /**
+     * @param \DTS\eBaySDK\Inventory\Types\WithdrawOfferByInventoryItemGroupRestRequest $request
+     * @return \DTS\eBaySDK\Inventory\Types\WithdrawOfferByInventoryItemGroupRestResponse
+     */
+    public function withdrawOfferByInventoryItemGroup(\DTS\eBaySDK\Inventory\Types\WithdrawOfferByInventoryItemGroupRestRequest $request)
+    {
+        return $this->withdrawOfferByInventoryItemGroupAsync($request)->wait();
+    }
+
+    /**
+     * @param \DTS\eBaySDK\Inventory\Types\WithdrawOfferByInventoryItemGroupRestRequest $request
+     * @return \GuzzleHttp\Promise\PromiseInterface
+     */
+    public function withdrawOfferByInventoryItemGroupAsync(\DTS\eBaySDK\Inventory\Types\WithdrawOfferByInventoryItemGroupRestRequest $request)
+    {
+        return $this->callOperationAsync('WithdrawOfferByInventoryItemGroup', $request);
     }
 
     /**
