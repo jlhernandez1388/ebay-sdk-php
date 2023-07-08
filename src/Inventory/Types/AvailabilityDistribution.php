@@ -12,27 +12,33 @@ namespace DTS\eBaySDK\Inventory\Types;
 
 /**
  *
- * @property integer $quantity
+ * @property \DTS\eBaySDK\Inventory\Types\TimeDuration $pickupAtLocationAvailability
+ * @property \DTS\eBaySDK\Inventory\Types\ShipToLocationAvailability $shipToLocationAvailability
  */
-class ShipToLocationAvailability extends \DTS\eBaySDK\Types\BaseType
+class AvailabilityDistribution extends \DTS\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
+        'fulfillmentTime' => [
+            'type' => 'DTS\eBaySDK\Inventory\Types\TimeDuration',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'fulfillmentTime'
+        ],
+        'merchantLocationKey' => [
+            'type' => 'string',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'merchantLocationKey'
+        ],
         'quantity' => [
             'type' => 'integer',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'quantity'
-        ],
-        'availabilityDistributions' => [
-            'type' => 'DTS\eBaySDK\Inventory\Types\AvailabilityDistribution',
-            'repeatable' => true,
-            'attribute' => false,
-            'elementName' => 'availabilityDistributions'
         ]
-
     ];
 
     /**
