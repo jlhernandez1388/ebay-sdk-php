@@ -20,7 +20,7 @@ namespace DTS\eBaySDK\Logistics\Types;
  * @property string $shippingQuoteId
  * 
  */
-class CreateFromQuoteRequest extends \DTS\eBaySDK\Types\BaseType
+class CreateFromShippingQuoteRequest extends \DTS\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
