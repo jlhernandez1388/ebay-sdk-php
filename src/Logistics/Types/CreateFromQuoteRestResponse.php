@@ -18,7 +18,7 @@ use DTS\eBaySDK\HttpHeadersTrait;
  * @property \DTS\eBaySDK\Logistics\Types\ErrorDetailV3[] $errors
  * @property \DTS\eBaySDK\Logistics\Types\ErrorDetailV3[] $warnings
  */
-class CreateShipmentFromQuoteRestResponse extends \DTS\eBaySDK\Logistics\Types\Shipment
+class CreateFromQuoteRestResponse extends \DTS\eBaySDK\Logistics\Types\Shipment
 {
     use StatusCodeTrait;
     use HttpHeadersTrait;

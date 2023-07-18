@@ -13,7 +13,7 @@ namespace DTS\eBaySDK\Logistics\Types;
 /**
  *
  */
-class CreateShipmentFromQuoteRestRequest extends \DTS\eBaySDK\Logistics\Types\CreateShipmentFromQuoteRequest
+class CreateFromQuoteRestRequest extends \DTS\eBaySDK\Logistics\Types\CreateFromQuoteRequest
 {
     /**
      * @var array Properties belonging to objects of this class.
