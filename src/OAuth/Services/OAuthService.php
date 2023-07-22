@@ -189,7 +189,7 @@ class OAuthService
 
         ];
 
-        return $url.http_build_query($urlParams, null, '&', PHP_QUERY_RFC3986);
+        return $url.http_build_query($urlParams, '', '&', PHP_QUERY_RFC3986);
     }
 
     /**
