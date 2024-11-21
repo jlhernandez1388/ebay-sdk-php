@@ -20,7 +20,7 @@
         "ext-curl": "*",
         "ext-libxml": "*",
         "guzzlehttp/guzzle": "^7.0",
-        "guzzlehttp/psr7": "^1.9",
+        "guzzlehttp/psr7": "^2.0",
         "guzzlehttp/promises": "^1.5"
     },
     "require-dev": {
